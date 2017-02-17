@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>websocket mqtt</title>
+</head>
+<body>
+<script src="browserMqtt.js"></script>
+<script>
+      var client = mqtt.connect("ws:localhost:2222")
+      client.subscribe("mqtt/demo")
+
+      client.on("message", function (topic, payload) {
+        console.log([topic, payload].join(": "))
+      })
+    </script>
+</body>
+</html>

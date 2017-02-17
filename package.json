@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "mqtt": "^2.4.0"
+  },
+  "description": "MQTT test",
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
